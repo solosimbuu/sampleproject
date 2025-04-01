@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<header style='color:red; text-align:center;font-size:50px;'>BEST HOSPITAL</header>
+<nav>
+<a href=dashboard.html>Dashboard</a>
+<a href=login.html>Logout</a>
+</nav>
+<h1>Appointment</h1>
+<div >
+        <form action="appointment" method=post>   
+           
+        <label>department</label><br>
+       <input type="text" name="department"  placeholder="department" required><br>
+       <label>PatientID</label><br>
+       <input type="number" name="patientID"  placeholder="patientID" required><br>
+       <label>Payment</label><br>
+       <input type="text" name="payment"  placeholder="Enter amount" required><br>
+        <label>Date</label><br>
+       <input type="datetime-local" name="dateAndtime" required><br>
+       
+       <label>Choose doctor</label><br>
+       <select name="doctor" required>
+       
+       <option value="">select a doctor</option>
+             <option value="Dr.Shanmugam">Dr.Shanmugam</option>
+             <option value="Dr.Arulmani">Dr.Arulmani</option>
+             <option value="Dr.Santhosh">Dr.Santhosh</option>
+       
+       </select>
+       <br>
+        <input type="submit" value="Submitted to Appointment" style="background-color:red;
+        padding:10px 10px;
+        margin:20px 0px;
+        border-radius :4px;
+        box-sizing:border-box;
+        border:1px solid white;
+        width: 15%;
+        font-size: 1em
+        color:white;
+        text-align:center;
+        justify-content: center;
+    align-items: center;
+    cursor:pointer ;" name="booking" placeholder="Booking Appointment" required>
+        
+        
+        </form>
+        </div>
+</body>
+</html>

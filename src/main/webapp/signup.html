@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+header {
+        background-color:blue;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 50px;
+    }
+   nav {
+        background-color: blue;
+        overflow: hidden;
+        font-size: 18px;
+    }
+
+    nav a {
+        float: left;
+        display: block;
+        color: white;
+        padding: 14px 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color:red ;
+    }
+    
+    .head1{
+   color:red;
+   }
+
+.form-container{
+
+
+
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    margin-top:20px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 25px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+
+</style>
+</head>
+<body>
+<header>BEST HOSPITAL</header>
+
+<nav>
+<a href=index.html>Home</a>
+<a href=signup.html>SignUp</a>
+<a href=login.html>Login</a>
+</nav>
+<h1 class="head1">Sign up to Hospital Management</h1>
+<div class="form-container">
+        <form action="signup"  method=post>   
+           
+        <label>SignUp Account</label><br>
+        
+<br>
+       <label>Email</label> 
+       <input type="email" name="email" class="Email" placeholder="Email" required>
+       <br>
+       <label>Create Password</label>
+        <input type="password" name="Password" placeholder=" create Password" maxlength="6" required>
+        <br>
+        <input type="submit" value="Sign Up"  name="sign up" placeholder="SignUp" required>
+        
+        <p>Already you have a Best Hospital Account?<a style="color:red; cursor:pointer;" href="login.html"> login now</a>
+        </p>
+        </form>
+        </div>
+ <div class="footer">
+<footer>
+<p>@ 2025 Best Hospital .All Rights Reserved. </p>
+<a href="">Privacy Policy</a>
+<a href="">Terms and Conditions</a>
+
+</footer>
+</div>
+</body>
+</html>

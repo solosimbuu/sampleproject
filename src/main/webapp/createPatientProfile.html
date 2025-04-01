@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Patient Profile</title>
+<style>
+
+
+
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* Header Styling */
+    header {
+        color: red;
+        text-align: center;
+        font-size: 50px;
+        padding: 20px 0;
+        background-color: blue;
+        color: white;
+    }
+
+    /* Navigation Styling */
+    nav {
+        text-align: center;
+        background-color: blue;
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: red;
+    }
+
+    /* Main Heading */
+    .head1 {
+        color:blue;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 36px;
+    }
+
+    /* Form Styling */
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: black;
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form div {
+        margin-bottom: 15px;
+    }
+
+    form label {
+        display: block;
+        color:red;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    form input {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+        margin-left:10px;
+    }
+
+    form button {
+        background-color: #27ae60;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        width: 80%;
+        font-size: 20px;
+        margin-left:35px;
+    }
+
+    form button:hover {
+        background-color: #2ecc71;
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 14px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    footer a {
+        color: #ecf0f1;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    footer a:hover {
+        color: #3498db;
+        text-decoration: underline;
+    }
+
+</style>
+</head>
+<body>
+<header style='color:red; text-align:center;font-size:50px;'>BEST HOSPITAL</header>
+
+<nav>
+<a href=dashboard.html>Dashboard</a>
+<a href=login.html>Logout</a>
+</nav>
+<h1 class="head1">Create Patient Profile</h1>
+<form action="createPatientProfile" method=post>
+<div>
+<label>Name</label><input type="text" name="name"required>
+</div>
+<br>
+<div>
+<label>Age</label><input type="number" name="age"required>
+</div>
+<br>
+
+<div>
+<label>Address</label><input type="text" name="address" required>
+</div>
+<br>
+
+<div>
+<label>Mobile</label><input type="tel" name="mobile" required>
+</div>
+<br>
+
+<div>
+<label>Gender</label><input type="text" name="gender" required>
+</div>
+<br>
+
+<button type="submit">Submit</button>
+</form>
+<div class="footer">
+<footer>
+<p>@ 2025 Best Hospital .All Rights Reserved. </p>
+<a href="">Privacy Policy</a>
+<a href="">Terms and Conditions</a>
+
+</footer>
+</div>
+</body>
+</html>
